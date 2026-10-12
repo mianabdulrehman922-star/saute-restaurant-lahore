@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAUTÉ — Mediterranean & Turkish Dining | DHA Phase 5, Lahore</title>
+    <meta name="description" content="Experience authentic Mediterranean flavours and Turkish culinary craftsmanship at SAUTÉ in DHA Phase 5, Lahore, Pakistan.">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sauteBg: '#0c0d0f',
+                        sauteSurface: '#121418',
+                        sauteCard: '#17191e',
+                        sauteGold: '#d4af37',
+                        sauteGoldDark: '#c5a059',
+                        sauteIvory: '#f4efe6',
+                        sauteCream: '#e6ded1',
+                        sauteOlive: '#556b2f'
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS Styles -->
+    <style>
+        body {
+            background-color: #0c0d0f;
+            color: #e6ded1;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Glassmorphism Styles */
+        .glass-header {
+            background: rgba(12, 13, 15, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .glass-card {
+            background: rgba(23, 25, 30, 0.7);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+        }
+
+        /* Gold Gradient Text */
+        .text-gold-gradient {
+            background: linear-gradient(135deg, #f4efe6 0%, #d4af37 50%, #c5a059 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0c0d0f;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #2a2d35;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #d4af37;
+        }
+
+        /* Smooth Image Hover Effects */
+        .zoom-img-container {
+            overflow: hidden;
+        }
+        .zoom-img-container img {
+            transition: transform 0.7s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+        .zoom-img-container:hover img {
+            transform: scale(1.08);
+        }
+
+        /* Form Controls Dark Focus */
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #d4af37 !important;
+            box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+        }
+    </style>
+
+    <!-- Schema.org Restaurant Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "SAUTÉ",
+      "image": "https://images.unsplash.com/photo-1544025162-d76694265947",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "CCA 93, Sector C, DHA Phase 5",
+        "addressLocality": "Lahore",
+        "addressRegion": "Punjab",
+        "postalCode": "54000",
+        "addressCountry": "PK"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 31.4550,
+        "longitude": 74.3980
+      },
+      "url": "https://maps.app.goo.gl/ySQWsffL3oiQ2NnPA?g_st=ac",
+      "telephone": "+923367272883",
+      "servesCuisine": ["Mediterranean", "Turkish"],
+      "priceRange": "$$"
+    }
+    </script>
+</head>
+<body class="selection:bg-sauteGold selection:text-black">
+
+    <div className="bg-gradient-to-r from-[#8C6D2D] via-[#D4AF37] to-[#8C6D2D] text-black text-[11px] font-semibold uppercase tracking-widest px-4 py-2 text-center flex items-center justify-center gap-2 shadow-md">
+        <i class="fa-solid fa-sparkles"></i>
+        <span>SAUTÉ — Authentic Mediterranean & Turkish Culinary Art in DHA Phase 5, Lahore</span>
+    </div>
+
+    <header id="main-header" class="sticky top-0 z-40 transition-all duration-300 border-b border-white/10 glass-header py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+            
+            <!-- Brand Logo -->
+            <a href="#home" class="flex flex-col group">
+                <span class="font-serif text-2xl sm:text-3xl font-bold tracking-[0.2em] text-sauteIvory group-hover:text-sauteGold transition-colors">
+                    SAUTÉ
+                </span>
+                <span class="text-[9px] uppercase tracking-[0.35em] text-sauteGoldDark font-medium -mt-1">
+                    Lahore • Phase 5
+                </span>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="hidden md:flex items-center space-x-8 text-xs uppercase tracking-widest font-medium text-gray-300">
+                <a href="#home" class="hover:text-sauteGold transition-colors">Home</a>
+                <a href="#story" class="hover:text-sauteGold transition-colors">Our Story</a>
+                <a href="#menu" class="hover:text-sauteGold transition-colors">Menu</a>
+                <a href="#signatures" class="hover:text-sauteGold transition-colors">Signatures</a>
+                <a href="#gallery" class="hover:text-sauteGold transition-colors">Gallery</a>
+                <a href="#contact" class="hover:text-sauteGold transition-colors">Contact</a>
+            </nav>
+
+            <!-- Call & Reservation CTA Buttons -->
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="tel:+923367272883" class="flex items-center gap-2 text-xs text-sauteGold border border-sauteGold/30 hover:border-sauteGold px-4 py-2 rounded-full transition-all hover:bg-sauteGold/10">
+                    <i class="fa-solid fa-phone text-xs"></i>
+                    <span>+92 336 7272883</span>
+                </a>
+                <a href="#reservation" class="bg-gradient-to-r from-sauteGoldDark to-sauteGold text-black font-semibold text-xs uppercase tracking-wider px-5 py-2.5 rounded-full shadow-lg shadow-sauteGold/10 hover:shadow-sauteGold/25 hover:scale-105 active:scale-95 transition-all">
+                    Reserve Table
+                </a>
+            </div>
+
+            <!-- Mobile Drawer Button -->
+            <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-300 hover:text-sauteGold focus:outline-none" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars text-xl" id="menu-icon-bars"></i>
+                <i class="fa-solid fa-xmark text-xl hidden" id="menu-icon-x"></i>
+            </button>
+
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Overlay Drawer -->
+    <div id="mobile-drawer" class="fixed inset-0 z-30 bg-black/90 backdrop-blur-xl hidden flex-col justify-between p-8 pt-24 md:hidden">
+        <div class="flex flex-col space-y-6 text-center font-serif text-xl tracking-wider text-sauteIvory">
+            <a href="#home" class="mobile-link hover:text-sauteGold">Home</a>
+            <a href="#story" class="mobile-link hover:text-sauteGold">Our Story</a>
+            <a href="#menu" class="mobile-link hover:text-sauteGold">Interactive Menu</a>
+            <a href="#signatures" class="mobile-link hover:text-sauteGold">Chef Signatures</a>
+            <a href="#gallery" class="mobile-link hover:text-sauteGold">Photo Gallery</a>
+            <a href="#reservation" class="mobile-link hover:text-sauteGold">Table Booking</a>
+            <a href="#contact" class="mobile-link hover:text-sauteGold">Location & Hours</a>
+        </div>
+        <div class="space-y-3 pt-6 border-t border-white/10">
+            <a href="tel:+923367272883" class="w-full text-center py-3 rounded-xl border border-sauteGold/40 text-sauteGold font-medium text-xs tracking-widest uppercase flex items-center justify-center gap-2">
+                <i class="fa-solid fa-phone"></i> Call +92 336 7272883
+            </a>
+            <a href="#reservation" class="mobile-link w-full text-center py-3 rounded-xl bg-sauteGold text-black font-semibold text-xs tracking-widest uppercase block">
+                Book a Table
+            </a>
+        </div>
+    </div>
+
+    <section id="home" class="relative min-h-[92vh] flex items-center justify-center overflow-hidden py-24">
+        <!-- Hero Background Media Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=2000&q=80" alt="SAUTÉ Mediterranean Feast" class="w-full h-full object-cover object-center scale-105 brightness-75">
+            <div class="absolute inset-0 bg-gradient-to-t from-sauteBg via-sauteBg/75 to-black/60"></div>
+            <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-black/40 to-sauteBg"></div>
+        </div>
+
+        <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center flex flex-col items-center">
+            
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-sauteGold/10 border border-sauteGold/30 text-sauteGold text-xs uppercase tracking-[0.25em] mb-6 backdrop-blur-md">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>DHA Phase 5, Lahore, Pakistan</span>
+            </div>
+
+            <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-light text-sauteIvory tracking-tight leading-[1.15] mb-6">
+                A Taste Worth <span class="italic font-normal text-sauteGold">Savoring.</span>
+            </h1>
+
+            <p class="max-w-2xl text-base sm:text-lg text-gray-300 font-light leading-relaxed mb-10">
+                Discover a world of Mediterranean flavours, authentic Turkish inspiration, and memorable dining in the heart of Lahore.
+            </p>
+
+            <!-- Hero Action Buttons -->
+            <div class="flex flex-wrap items-center justify-center gap-4 sm:gap-6 w-full max-w-lg">
+                <a href="#menu" class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-gradient-to-r from-sauteGoldDark to-sauteGold text-black font-semibold text-xs uppercase tracking-widest hover:brightness-110 shadow-lg shadow-sauteGold/20 transition-all text-center">
+                    Explore Our Menu
+                </a>
+                <a href="https://maps.app.goo.gl/ySQWsffL3oiQ2NnPA?g_st=ac" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-7 py-3.5 rounded-full bg-black/40 border border-white/20 hover:border-sauteGold text-gray-200 hover:text-sauteGold font-medium text-xs uppercase tracking-widest transition-all backdrop-blur-md text-center flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-map-location-dot text-sauteGold"></i>
+                    Find Our Location
+                </a>
+                <a href="tel:+923367272883" class="w-full sm:w-auto px-7 py-3.5 rounded-full bg-transparent border border-sauteGold/40 hover:bg-sauteGold/10 text-sauteGold font-medium text-xs uppercase tracking-widest transition-all text-center flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-phone"></i>
+                    Call to Reserve
+                </a>
+            </div>
+
+            <!-- Key Feature Highlights -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16 w-full pt-8 border-t border-white/10 text-center">
+                <div class="p-3">
+                    <p class="text-xl font-serif text-sauteGold font-bold">Wood-Fired</p>
+                    <p class="text-[11px] text-gray-400 uppercase tracking-wider mt-1">Charcoal Kebabs</p>
+                </div>
+                <div class="p-3">
+                    <p class="text-xl font-serif text-sauteGold font-bold">Artisanal</p>
+                    <p class="text-[11px] text-gray-400 uppercase tracking-wider mt-1">Fresh Daily Meze</p>
+                </div>
+                <div class="p-3">
+                    <p class="text-xl font-serif text-sauteGold font-bold">Traditional</p>
+                    <p class="text-[11px] text-gray-400 uppercase tracking-wider mt-1">Turkish Desserts</p>
+                </div>
+                <div class="p-3">
+                    <p class="text-xl font-serif text-sauteGold font-bold">Prime Spot</p>
+                    <p class="text-[11px] text-gray-400 uppercase tracking-wider mt-1">Sector C, Phase 5</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="story" class="py-24 bg-sauteSurface border-y border-white/5 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Editorial Image Collage -->
+                <div class="lg:col-span-6 relative">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="space-y-4">
+                            <div class="zoom-img-container rounded-2xl border border-white/10 shadow-2xl h-64">
+                                <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80" alt="Charcoal Ember Grill" class="w-full h-full object-cover">
+                            </div>
+                            <div class="zoom-img-container rounded-2xl border border-white/10 shadow-2xl h-48">
+                                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Restaurant Interior Lighting" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="space-y-4 pt-8">
+                            <div class="zoom-img-container rounded-2xl border border-white/10 shadow-2xl h-48">
+                                <img src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=800&q=80" alt="Fresh Olive and Meze Platter" class="w-full h-full object-cover">
+                            </div>
+                            <div class="zoom-img-container rounded-2xl border border-white/10 shadow-2xl h-64">
+                                <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=800&q=80" alt="Pistachio Kunafa" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Badge overlay -->
+                    <div class="absolute -bottom-6 -right-2 bg-sauteBg/90 backdrop-blur-md border border-sauteGold/40 p-4 rounded-xl shadow-2xl hidden sm:flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-sauteGold/20 flex items-center justify-center text-sauteGold">
+                            <i class="fa-solid fa-utensils"></i>
+                        </div>
+                        <div>
+                            <p class="text-[10px] uppercase tracking-widest text-gray-400">Culinary Identity</p>
+                            <p class="text-xs font-serif font-bold text-sauteIvory">Lahore DHA Phase 5</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Editorial Copy -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 text-xs uppercase tracking-[0.3em] text-sauteGold font-semibold">
+                        <span class="w-6 h-[1px] bg-sauteGold"></span>
+                        <span>Our Philosophy</span>
+                    </div>
+
+                    <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-light text-sauteIvory leading-tight">
+                        Where Mediterranean Heritage Meets <span class="italic text-sauteGold">Turkish Culinary Art.</span>
+                    </h2>
+
+                    <p class="text-gray-300 font-light text-base leading-relaxed">
+                        At <strong class="text-sauteIvory">SAUTÉ</strong>, food is more than sustenance—it is a tribute to centuries of Mediterranean coastal tradition and Turkish charcoal grill masteristry. Situated in Sector C, DHA Phase 5, Lahore, SAUTÉ brings together rich extra-virgin olive oils, perfectly seasoned charcoal-marinated meats, and fresh wood-fired flatbreads.
+                    </p>
+
+                    <p class="text-gray-400 font-light text-sm leading-relaxed">
+                        Every single dish is prepared using time-honored recipes, premium spices, and cold-pressed ingredients—served with genuine Pakistani warmth and hospitality. Whether you visit for an intimate evening or a family feast, SAUTÉ offers an upscale dining experience tailored for Lahore's discerning food lovers.
+                    </p>
+
+                    <!-- Pillar Highlights -->
+                    <div class="grid grid-cols-3 gap-4 pt-4 border-t border-white/10">
+                        <div class="border-l-2 border-sauteGold pl-3">
+                            <p class="text-[10px] uppercase tracking-wider text-gray-400">Authentic</p>
+                            <p class="text-xs font-serif text-sauteIvory font-medium mt-0.5">Turkish Spices</p>
+                        </div>
+                        <div class="border-l-2 border-sauteGold pl-3">
+                            <p class="text-[10px] uppercase tracking-wider text-gray-400">Artisanal</p>
+                            <p class="text-xs font-serif text-sauteIvory font-medium mt-0.5">Fresh Dips Daily</p>
+                        </div>
+                        <div class="border-l-2 border-sauteGold pl-3">
+                            <p class="text-[10px] uppercase tracking-wider text-gray-400">Refined</p>
+                            <p class="text-xs font-serif text-sauteIvory font-medium mt-0.5">Ambiance</p>
+                        </div>
+                    </div>
+
+                    <div class="pt-2">
+                        <a href="#reservation" class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-sauteGold hover:text-white transition-colors">
+                            <span>Book Your Table Experience</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+            <span class="text-xs uppercase tracking-[0.3em] text-sauteGold font-medium">Savor The Variety</span>
+            <h2 class="font-serif text-3xl sm:text-5xl text-sauteIvory font-light">
+                Interactive <span class="italic text-sauteGold">Restaurant Menu</span>
+            </h2>
+            <p class="text-gray-400 text-sm font-light">
+                Explore confirmed Mediterranean and Turkish dishes with prices in PKR. Filter by category or search by item name.
+            </p>
+        </div>
+
+        <!-- Filter Controls & Real-Time Search Bar -->
+        <div class="space-y-6 mb-12">
+            
+            <!-- Search Bar -->
+            <div class="max-w-md mx-auto relative">
+                <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 text-sm"></i>
+                <input 
+                    type="text" 
+                    id="menu-search-input" 
+                    placeholder="Search menu (e.g. Adana, Hummus, Kunafa)..." 
+                    class="w-full bg-sauteSurface border border-white/10 rounded-full pl-11 pr-10 py-3 text-sm text-gray-200 placeholder:text-gray-500 transition-all"
+                >
+                <button id="clear-search-btn" class="hidden absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-white text-xs">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <!-- Category Filter Buttons -->
+            <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3" id="menu-category-tabs">
+                <button class="menu-tab-btn active px-4 py-2 rounded-full text-xs uppercase tracking-wider transition-all border bg-sauteGold text-black border-sauteGold font-semibold shadow-lg shadow-sauteGold/20" data-category="All">
+                    All Categories
+                </button>
+                <button class="menu-tab-btn px-4 py-2 rounded-full text-xs uppercase tracking-wider transition-all border bg-sauteSurface text-gray-300 border-white/10 hover:border-sauteGold/50 hover:text-white" data-category="Breakfast">
+                    Breakfast
+                </button>
+                <button class="menu-tab-btn px-4 py-2 rounded-full text-xs uppercase tracking-wider transition-all border bg-sauteSurface text-gray-300 border-white/10 hover:border-sauteGold/50 hover:text-white" data-category="Starters & Meze">
+                    Starters & Meze
+                </button>
+                <button class="menu-tab-btn px-4 py-2 rounded-full text-xs uppercase tracking-wider transition-all border bg-sauteSurface text-gray-300 border-white/10 hover:border-sauteGold/50 hover:text-white" data-category="Turkish Specialties">
+                    Turkish Specialties
+                </button>
+                <button class="menu-tab-btn px-4 py-2 rounded-full text-xs uppercase tracking-wider transition-all border bg-sauteSurface text-gray-300 border-white/10 hover:border-sauteGold/50 hover:text-white" data-category="Mediterranean Mains">
+                    Mediterranean Mains
+                </button>
+                <button class="menu-tab-btn px-4 py-2 rounded-full text-xs uppercase tracking-wider transition-all border bg-sauteSurface text-gray-300 border-white/10 hover:border-sauteGold/50 hover:text-white" data-category="Desserts">
+                    Desserts
+                </button>
+                <button class="menu-tab-btn px-4 py-2 rounded-full text-xs uppercase tracking-wider transition-all border bg-sauteSurface text-gray-300 border-white/10 hover:border-sauteGold/50 hover:text-white" data-category="Beverages">
+                    Beverages
+                </button>
+            </div>
+
+        </div>
+
+        <!-- Dynamic Menu Grid Container -->
+        <div id="menu-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            <!-- JavaScript renders menu cards dynamically -->
+        </div>
+
+        <!-- No Search Results Fallback -->
+        <div id="no-menu-results" class="hidden text-center py-16 bg-sauteSurface rounded-2xl border border-white/5">
+            <i class="fa-solid fa-utensils text-4xl text-gray-600 mb-3"></i>
+            <p class="text-gray-400 text-sm">No dishes matched your search or filter criteria.</p>
+            <button id="reset-menu-filters" class="mt-4 text-xs text-sauteGold underline uppercase font-semibold">Reset Filters</button>
+        </div>
+
+        <!-- External Menu Reference Link -->
+        <div class="mt-12 text-center">
+            <a href="https://www.foodpakistan.pk/restaurant/saute-restaurant" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-gray-400 hover:text-sauteGold transition-colors bg-sauteSurface px-6 py-3 rounded-full border border-white/10">
+                <span>Verify Full SAUTÉ Directory Menu on FoodPakistan</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+            </a>
+        </div>
+
+    </section>
+
+    <!-- DISH DETAIL MODAL -->
+    <div id="dish-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden items-center justify-center p-4">
+        <div class="bg-sauteSurface border border-sauteGold/40 rounded-2xl max-w-lg w-full overflow-hidden shadow-2xl relative animate-in fade-in duration-200">
+            <button id="close-dish-modal" class="absolute top-3 right-3 bg-black/60 text-gray-300 hover:text-white p-2.5 rounded-full z-10">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+            <div class="relative h-64 w-full">
+                <img id="modal-dish-img" src="" alt="" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-sauteSurface via-transparent to-transparent"></div>
+            </div>
+            <div class="p-6 space-y-4">
+                <div class="flex justify-between items-baseline">
+                    <span id="modal-dish-category" class="text-xs uppercase tracking-widest text-sauteGold"></span>
+                    <span id="modal-dish-price" class="font-serif text-2xl font-bold text-sauteGold"></span>
+                </div>
+                <h3 id="modal-dish-title" class="font-serif text-2xl text-sauteIvory"></h3>
+                <p id="modal-dish-desc" class="text-gray-300 text-sm leading-relaxed font-light"></p>
+                <div>
+                    <p class="text-[11px] uppercase tracking-wider text-gray-400 mb-2">Dietary & Chef Notes</p>
+                    <div id="modal-dish-tags" class="flex flex-wrap gap-2"></div>
+                </div>
+                <div class="pt-4 flex gap-3">
+                    <a href="#reservation" id="modal-reserve-btn" class="flex-1 bg-sauteGold text-black font-semibold text-xs uppercase tracking-wider py-3.5 rounded-xl text-center block">
+                        Reserve Table for Dish
+                    </a>
+                    <a href="tel:+923367272883" class="px-5 py-3.5 border border-white/20 hover:border-sauteGold text-gray-200 rounded-xl flex items-center justify-center text-xs">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="signatures" class="py-24 bg-sauteSurface border-y border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-xs uppercase tracking-[0.3em] text-sauteGold font-medium">Culinary Highlights</span>
+                    <h2 class="font-serif text-3xl sm:text-5xl text-sauteIvory font-light mt-2">
+                        Chef's <span class="italic text-sauteGold">Signatures</span>
+                    </h2>
+                </div>
+                <p class="text-gray-400 text-xs sm:text-sm max-w-md mt-4 md:mt-0 font-light">
+                    Hand-selected standout dishes that define the authentic Turkish and Mediterranean dining experience at SAUTÉ.
+                </p>
+            </div>
+
+            <!-- Signature Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Signature 1 -->
+                <div class="bg-sauteBg border border-white/10 rounded-2xl overflow-hidden shadow-2xl flex flex-col justify-between group">
+                    <div>
+                        <div class="h-64 w-full relative overflow-hidden zoom-img-container">
+                            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80" alt="Turkish Adana Kebab" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-sauteBg via-transparent to-transparent"></div>
+                            <span class="absolute top-3 left-3 bg-sauteGold text-black text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-md">
+                                Charcoal Flame
+                            </span>
+                        </div>
+                        <div class="p-6 space-y-3">
+                            <div class="flex justify-between items-baseline">
+                                <span class="text-[10px] uppercase tracking-widest text-sauteGold font-semibold">Turkish Specialty</span>
+                                <span class="font-serif font-bold text-sauteGold">PKR 2,450</span>
+                            </div>
+                            <h3 class="font-serif text-2xl text-sauteIvory group-hover:text-sauteGold transition-colors">Authentic Turkish Adana Kebab</h3>
+                            <p class="text-gray-400 text-xs leading-relaxed font-light">
+                                Hand-minced spiced lamb shoulder mounted on wide iron skewers, grilled over oakwood coals, served with sumac-dusted onions and warm lavash.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="#reservation" class="block w-full text-center border border-sauteGold/40 hover:bg-sauteGold hover:text-black text-sauteGold font-semibold text-xs uppercase tracking-wider py-2.5 rounded-lg transition-all">
+                            Order at Table
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Signature 2 -->
+                <div class="bg-sauteBg border border-white/10 rounded-2xl overflow-hidden shadow-2xl flex flex-col justify-between group">
+                    <div>
+                        <div class="h-64 w-full relative overflow-hidden zoom-img-container">
+                            <img src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=800&q=80" alt="Sauté Royal Meze Platter" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-sauteBg via-transparent to-transparent"></div>
+                            <span class="absolute top-3 left-3 bg-sauteGold text-black text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-md">
+                                Fresh Shareable
+                            </span>
+                        </div>
+                        <div class="p-6 space-y-3">
+                            <div class="flex justify-between items-baseline">
+                                <span class="text-[10px] uppercase tracking-widest text-sauteGold font-semibold">Starters</span>
+                                <span class="font-serif font-bold text-sauteGold">PKR 1,650</span>
+                            </div>
+                            <h3 class="font-serif text-2xl text-sauteIvory group-hover:text-sauteGold transition-colors">Sauté Royal Meze Spread</h3>
+                            <p class="text-gray-400 text-xs leading-relaxed font-light">
+                                A colorful arrangement of silky chickpea hummus, smoked eggplant Mutabal, garlic Haydari yogurt, and warm pita straight from the wood oven.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="#reservation" class="block w-full text-center border border-sauteGold/40 hover:bg-sauteGold hover:text-black text-sauteGold font-semibold text-xs uppercase tracking-wider py-2.5 rounded-lg transition-all">
+                            Order at Table
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Signature 3 -->
+                <div class="bg-sauteBg border border-white/10 rounded-2xl overflow-hidden shadow-2xl flex flex-col justify-between group">
+                    <div>
+                        <div class="h-64 w-full relative overflow-hidden zoom-img-container">
+                            <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=800&q=80" alt="Pistachio Kunafa" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-sauteBg via-transparent to-transparent"></div>
+                            <span class="absolute top-3 left-3 bg-sauteGold text-black text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-md">
+                                Hot Baked
+                            </span>
+                        </div>
+                        <div class="p-6 space-y-3">
+                            <div class="flex justify-between items-baseline">
+                                <span class="text-[10px] uppercase tracking-widest text-sauteGold font-semibold">Dessert</span>
+                                <span class="font-serif font-bold text-sauteGold">PKR 1,450</span>
+                            </div>
+                            <h3 class="font-serif text-2xl text-sauteIvory group-hover:text-sauteGold transition-colors">Crispy Antep Pistachio Kunafa</h3>
+                            <p class="text-gray-400 text-xs leading-relaxed font-light">
+                                Shredded pastry woven with unsalted Hatay cheese, baked golden in copper pans, drenched in warm orange blossom syrup with Turkish mastic gelato.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="#reservation" class="block w-full text-center border border-sauteGold/40 hover:bg-sauteGold hover:text-black text-sauteGold font-semibold text-xs uppercase tracking-wider py-2.5 rounded-lg transition-all">
+                            Order at Table
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="gallery" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-10">
+            <span class="text-xs uppercase tracking-[0.3em] text-sauteGold font-medium">Visual Journey</span>
+            <h2 class="font-serif text-3xl sm:text-5xl text-sauteIvory font-light mt-2">
+                The Sauté <span class="italic text-sauteGold">Gallery</span>
+            </h2>
+            <p class="text-gray-400 text-xs sm:text-sm mt-3 font-light">
+                Click any photograph to view in high definition.
+            </p>
+        </div>
+
+        <!-- Gallery Category Tabs -->
+        <div class="flex justify-center gap-2 mb-10" id="gallery-tabs">
+            <button class="gallery-tab active px-4 py-1.5 rounded-full text-xs tracking-wider transition-all border bg-sauteGold text-black font-semibold border-sauteGold" data-filter="All">All Shots</button>
+            <button class="gallery-tab px-4 py-1.5 rounded-full text-xs tracking-wider transition-all border border-white/10 text-gray-400 hover:text-white" data-filter="Food">Cuisine</button>
+            <button class="gallery-tab px-4 py-1.5 rounded-full text-xs tracking-wider transition-all border border-white/10 text-gray-400 hover:text-white" data-filter="Ambiance">Ambiance</button>
+            <button class="gallery-tab px-4 py-1.5 rounded-full text-xs tracking-wider transition-all border border-white/10 text-gray-400 hover:text-white" data-filter="Beverage">Tea & Coffee</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="gallery-grid">
+            
+            <div class="gallery-item group relative h-72 rounded-2xl overflow-hidden border border-white/10 cursor-pointer shadow-lg" data-category="Food" data-title="Charcoal Ember Grill" data-src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1200&q=80">
+                <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80" alt="Grill" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-6 flex flex-col justify-end">
+                    <span class="text-[10px] uppercase tracking-widest text-sauteGold">Charcoal Grill</span>
+                    <h4 class="font-serif text-lg text-white font-medium">Authentic Turkish Ember Cooking</h4>
+                </div>
+            </div>
+
+            <div class="gallery-item group relative h-72 rounded-2xl overflow-hidden border border-white/10 cursor-pointer shadow-lg" data-category="Ambiance" data-title="Luxe Interior Dining" data-src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80">
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Interior" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-6 flex flex-col justify-end">
+                    <span class="text-[10px] uppercase tracking-widest text-sauteGold">Ambiance</span>
+                    <h4 class="font-serif text-lg text-white font-medium">Warm Evening Atmosphere in Phase 5</h4>
+                </div>
+            </div>
+
+            <div class="gallery-item group relative h-72 rounded-2xl overflow-hidden border border-white/10 cursor-pointer shadow-lg" data-category="Food" data-title="Artisanal Meze Dips" data-src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=1200&q=80">
+                <img src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=800&q=80" alt="Meze" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-6 flex flex-col justify-end">
+                    <span class="text-[10px] uppercase tracking-widest text-sauteGold">Cuisine</span>
+                    <h4 class="font-serif text-lg text-white font-medium">Fresh Hummus and Olive Oil</h4>
+                </div>
+            </div>
+
+            <div class="gallery-item group relative h-72 rounded-2xl overflow-hidden border border-white/10 cursor-pointer shadow-lg" data-category="Food" data-title="Pistachio Kunafa" data-src="https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=1200&q=80">
+                <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=800&q=80" alt="Kunafa" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-6 flex flex-col justify-end">
+                    <span class="text-[10px] uppercase tracking-widest text-sauteGold">Desserts</span>
+                    <h4 class="font-serif text-lg text-white font-medium">Hot Baked Turkish Kunafa</h4>
+                </div>
+            </div>
+
+            <div class="gallery-item group relative h-72 rounded-2xl overflow-hidden border border-white/10 cursor-pointer shadow-lg" data-category="Ambiance" data-title="Intimate Seating" data-src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=1200&q=80">
+                <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=800&q=80" alt="Dining Table" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-6 flex flex-col justify-end">
+                    <span class="text-[10px] uppercase tracking-widest text-sauteGold">Ambiance</span>
+                    <h4 class="font-serif text-lg text-white font-medium">Curated Tables for Special Evenings</h4>
+                </div>
+            </div>
+
+            <div class="gallery-item group relative h-72 rounded-2xl overflow-hidden border border-white/10 cursor-pointer shadow-lg" data-category="Beverage" data-title="Turkish Sand Brewed Coffee" data-src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1200&q=80">
+                <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80" alt="Turkish Coffee" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-6 flex flex-col justify-end">
+                    <span class="text-[10px] uppercase tracking-widest text-sauteGold">Beverages</span>
+                    <h4 class="font-serif text-lg text-white font-medium">Traditional Sand-Brewed Cardamom Coffee</h4>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- GALLERY LIGHTBOX MODAL -->
+    <div id="lightbox-modal" class="fixed inset-0 z-50 bg-black/95 backdrop-blur-md hidden items-center justify-center p-4">
+        <button id="close-lightbox" class="absolute top-5 right-5 text-gray-400 hover:text-white p-3 z-20">
+            <i class="fa-solid fa-xmark text-2xl"></i>
+        </button>
+        <div class="max-w-4xl max-h-[85vh] text-center space-y-3">
+            <img id="lightbox-img" src="" alt="" class="max-h-[70vh] max-w-full object-contain mx-auto rounded-xl border border-white/10">
+            <h4 id="lightbox-title" class="font-serif text-xl text-sauteIvory font-medium"></h4>
+        </div>
+    </div>
+
+    <section id="reservation" class="py-24 bg-sauteSurface border-t border-white/5 relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            
+            <div class="bg-sauteBg border border-sauteGold/30 rounded-3xl p-8 sm:p-12 shadow-2xl relative overflow-hidden">
+                <div class="absolute -top-24 -right-24 w-64 h-64 bg-sauteGold/10 rounded-full blur-3xl pointer-events-none"></div>
+
+                <div class="text-center max-w-xl mx-auto mb-10 space-y-2">
+                    <span class="text-xs uppercase tracking-[0.3em] text-sauteGold">Reservations</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl text-sauteIvory">
+                        Reserve Your <span class="italic text-sauteGold">Table</span>
+                    </h2>
+                    <p class="text-xs sm:text-sm text-gray-400 font-light">
+                        Submit a table booking enquiry for SAUTÉ in DHA Phase 5, Lahore.
+                    </p>
+                </div>
+
+                <form id="reservation-form" class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        
+                        <!-- Guest Name -->
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-gray-400 mb-2">Full Name *</label>
+                            <input type="text" id="res-name" required placeholder="e.g. Tariq Mahmood" class="w-full bg-sauteSurface border border-white/10 rounded-xl px-4 py-3 text-sm text-gray-200">
+                        </div>
+
+                        <!-- Phone Number -->
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-gray-400 mb-2">Phone Number *</label>
+                            <input type="tel" id="res-phone" required placeholder="+92 3XX XXXXXXX" class="w-full bg-sauteSurface border border-white/10 rounded-xl px-4 py-3 text-sm text-gray-200">
+                        </div>
+
+                        <!-- Reservation Date -->
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-gray-400 mb-2">Date *</label>
+                            <input type="date" id="res-date" required class="w-full bg-sauteSurface border border-white/10 rounded-xl px-4 py-3 text-sm text-gray-200">
+                        </div>
+
+                        <!-- Preferred Time -->
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-gray-400 mb-2">Preferred Time</label>
+                            <select id="res-time" class="w-full bg-sauteSurface border border-white/10 rounded-xl px-4 py-3 text-sm text-gray-200">
+                                <option value="12:30 PM">12:30 PM (Lunch)</option>
+                                <option value="02:00 PM">02:00 PM (Lunch)</option>
+                                <option value="07:00 PM">07:00 PM (Dinner)</option>
+                                <option value="08:00 PM" selected>08:00 PM (Dinner)</option>
+                                <option value="09:30 PM">09:30 PM (Dinner)</option>
+                                <option value="10:30 PM">10:30 PM (Dinner)</option>
+                            </select>
+                        </div>
+
+                        <!-- Number of Guests -->
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-gray-400 mb-2">Number of Guests</label>
+                            <select id="res-guests" class="w-full bg-sauteSurface border border-white/10 rounded-xl px-4 py-3 text-sm text-gray-200">
+                                <option value="1 Person">1 Person</option>
+                                <option value="2 Guests" selected>2 Guests</option>
+                                <option value="4 Guests">4 Guests</option>
+                                <option value="6 Guests">6 Guests</option>
+                                <option value="8+ Guests">8+ Guests (Large Party)</option>
+                            </select>
+                        </div>
+
+                        <!-- Seating Preference -->
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-gray-400 mb-2">Seating Area</label>
+                            <select id="res-seating" class="w-full bg-sauteSurface border border-white/10 rounded-xl px-4 py-3 text-sm text-gray-200">
+                                <option value="Indoor Main Dining">Indoor Main Dining</option>
+                                <option value="Courtyard Garden">Courtyard Garden</option>
+                                <option value="VIP Booth">VIP Private Lounge Booth</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <!-- Special Requests -->
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-gray-400 mb-2">Special Requests / Birthday Celebrations / Dietary Notes</label>
+                        <textarea id="res-notes" rows="3" placeholder="Let us know if you're celebrating a special occasion or have dietary preferences..." class="w-full bg-sauteSurface border border-white/10 rounded-xl p-4 text-sm text-gray-200"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-gradient-to-r from-sauteGoldDark to-sauteGold text-black font-semibold uppercase tracking-widest py-4 rounded-xl shadow-lg shadow-sauteGold/20 hover:brightness-110 transition-all text-xs">
+                        Submit Table Reservation Enquiry
+                    </button>
+
+                    <p class="text-[11px] text-gray-500 text-center">
+                        * Note: Submitting this form sends an initial enquiry. Our team will verify table availability and confirm via phone or WhatsApp.
+                    </p>
+
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- RESERVATION CONFIRMATION DIALOG -->
+    <div id="reservation-modal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md hidden items-center justify-center p-4">
+        <div class="bg-sauteSurface border border-sauteGold/50 rounded-3xl max-w-md w-full p-8 text-center space-y-4 shadow-2xl relative">
+            <div class="w-12 h-12 bg-sauteGold/20 text-sauteGold rounded-full flex items-center justify-center mx-auto text-xl">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <h3 class="font-serif text-2xl text-sauteIvory">Enquiry Received!</h3>
+            <p id="reservation-summary-text" class="text-xs text-gray-300 leading-relaxed"></p>
+            <div class="pt-4 flex flex-col gap-3">
+                <a href="tel:+923367272883" class="bg-sauteGold text-black font-semibold text-xs uppercase py-3 rounded-xl flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-phone"></i> Call +92 336 7272883 to Confirm Faster
+                </a>
+                <button id="close-res-modal" class="text-xs text-gray-400 hover:text-white underline py-2">
+                    Close Window
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <section id="contact" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+            
+            <!-- Contact Card Details -->
+            <div class="lg:col-span-5 space-y-8">
+                <div>
+                    <span class="text-xs uppercase tracking-[0.3em] text-sauteGold">Find Us in Lahore</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl text-sauteIvory font-light mt-2">
+                        Location & <span class="italic text-sauteGold">Hours</span>
+                    </h2>
+                </div>
+
+                <div class="space-y-5">
+                    
+                    <!-- Address Card -->
+                    <div class="flex items-start gap-4 p-4 rounded-xl bg-sauteSurface border border-white/5">
+                        <i class="fa-solid fa-location-dot text-sauteGold text-lg mt-1 shrink-0"></i>
+                        <div>
+                            <h4 class="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-1">Address</h4>
+                            <p class="text-sm text-gray-200 font-light leading-relaxed">
+                                CCA 93, Sector C, DHA Phase 5, Lahore, Punjab 54000, Pakistan
+                            </p>
+                            <a href="https://maps.app.goo.gl/ySQWsffL3oiQ2NnPA?g_st=ac" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs text-sauteGold hover:underline mt-2">
+                                <span>Get Directions on Google Maps</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Phone Card -->
+                    <div class="flex items-start gap-4 p-4 rounded-xl bg-sauteSurface border border-white/5">
+                        <i class="fa-solid fa-phone text-sauteGold text-lg mt-1 shrink-0"></i>
+                        <div>
+                            <h4 class="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-1">Direct Phone</h4>
+                            <a href="tel:+923367272883" class="text-base text-sauteIvory font-medium hover:text-sauteGold transition-colors">
+                                +92 336 7272883
+                            </a>
+                            <p class="text-[11px] text-gray-500 mt-1">Available during operating hours for reservations & takeaways.</p>
+                        </div>
+                    </div>
+
+                    <!-- Opening Hours Card -->
+                    <div class="flex items-start gap-4 p-4 rounded-xl bg-sauteSurface border border-white/5">
+                        <i class="fa-solid fa-clock text-sauteGold text-lg mt-1 shrink-0"></i>
+                        <div class="w-full">
+                            <h4 class="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Operating Hours</h4>
+                            <div class="space-y-1.5 text-xs text-gray-300">
+                                <div class="flex justify-between border-b border-white/5 pb-1">
+                                    <span>Monday – Sunday Lunch</span>
+                                    <span class="text-sauteGold font-medium">12:30 PM – 04:00 PM</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>Monday – Sunday Dinner</span>
+                                    <span class="text-sauteGold font-medium">07:00 PM – 12:00 AM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Embedded Interactive Google Map -->
+            <div class="lg:col-span-7 bg-sauteSurface rounded-3xl border border-white/10 p-3 overflow-hidden shadow-2xl flex flex-col min-h-[400px]">
+                <div class="w-full flex-1 rounded-2xl overflow-hidden relative min-h-[340px]">
+                    <iframe 
+                        title="SAUTÉ Location Map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.497258385759!2d74.3980!3d31.4550!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391906a2e12f3b8b%3A0x6b4f70cf84a3221!2sDHA%20Phase%205%2C%20Lahore!5e0!3m2!1sen!2spk!4v1680000000000!5m2!1sen!2spk" 
+                        class="w-full h-full border-0 grayscale opacity-85 hover:grayscale-0 transition-all duration-500"
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="p-3 bg-sauteBg mt-2 rounded-xl border border-white/5 flex flex-wrap items-center justify-between gap-2 px-4">
+                    <span class="text-xs text-gray-400">CCA 93, Sector C, DHA Phase 5, Lahore, Pakistan</span>
+                    <a href="https://maps.app.goo.gl/ySQWsffL3oiQ2NnPA?g_st=ac" target="_blank" rel="noopener noreferrer" class="text-xs text-sauteGold font-medium hover:underline flex items-center gap-1">
+                        <span>Open Maps</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="fixed bottom-6 right-6 z-40 flex flex-col gap-3">
+        <!-- Direct Call Floating Button -->
+        <a href="tel:+923367272883" class="w-12 h-12 bg-black/80 text-sauteGold border border-sauteGold/50 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform backdrop-blur-md" title="Call Restaurant Directly">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+
+        <!-- WhatsApp Floating Button -->
+        <a href="https://wa.me/923367272883" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-emerald-600 text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform shadow-emerald-900/30" title="Chat on WhatsApp">
+            <i class="fa-brands fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+
+    <footer class="bg-black border-t border-white/10 py-16 text-gray-400 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                
+                <!-- Brand Summary -->
+                <div class="space-y-3">
+                    <span class="font-serif text-2xl font-bold tracking-[0.2em] text-sauteIvory">SAUTÉ</span>
+                    <p class="text-gray-500 text-xs leading-relaxed">
+                        Authentic Mediterranean & Turkish Dining in Sector C, DHA Phase 5, Lahore, Pakistan.
+                    </p>
+                </div>
+
+                <!-- Navigation Quicklinks -->
+                <div class="space-y-2">
+                    <h5 class="text-xs uppercase tracking-widest text-sauteGold font-semibold">Quick Links</h5>
+                    <ul class="space-y-1.5 text-gray-400">
+                        <li><a href="#home" class="hover:text-white">Home</a></li>
+                        <li><a href="#story" class="hover:text-white">Our Story</a></li>
+                        <li><a href="#menu" class="hover:text-white">Interactive Menu</a></li>
+                        <li><a href="#gallery" class="hover:text-white">Photo Gallery</a></li>
+                    </ul>
+                </div>
+
+                <!-- Verified Contact Info -->
+                <div class="space-y-2">
+                    <h5 class="text-xs uppercase tracking-widest text-sauteGold font-semibold">Contact & Location</h5>
+                    <p class="text-gray-400">CCA 93, Sector C, DHA Phase 5, Lahore</p>
+                    <p class="text-gray-400">Direct Call: +92 336 7272883</p>
+                </div>
+
+                <!-- Concept Notice Disclaimer -->
+                <div class="space-y-2 bg-sauteSurface p-4 rounded-xl border border-white/5">
+                    <span class="text-[10px] uppercase tracking-widest text-sauteGold block font-semibold">Website Concept Note</span>
+                    <p class="text-[11px] text-gray-400 leading-relaxed">
+                        This is a website proposal design for SAUTÉ Lahore. All menu items and prices reflect public directory information. Verify details with restaurant management upon booking.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Copyright Footer Bar -->
+            <div class="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-gray-600">
+                <p>© 2026 SAUTÉ — Mediterranean & Turkish Dining, Lahore. All rights reserved.</p>
+                <div class="flex gap-4">
+                    <a href="https://maps.app.goo.gl/ySQWsffL3oiQ2NnPA?g_st=ac" target="_blank" rel="noopener noreferrer" class="hover:underline">Google Maps</a>
+                    <a href="https://www.foodpakistan.pk/restaurant/saute-restaurant" target="_blank" rel="noopener noreferrer" class="hover:underline">FoodPakistan Listing</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        // VERIFIED SAUTÉ MENU DATABASE
+        const MENU_DATA = [
+            {
+                id: 1,
+                name: "Authentic Turkish Adana Kebab",
+                category: "Turkish Specialties",
+                price: "PKR 2,450",
+                rawPrice: 2450,
+                description: "Hand-minced spiced lamb shoulder mounted on wide charcoal iron skewers, grilled over oak embers, served with sumac onions & lavash.",
+                image: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80",
+                isSignature: true,
+                tags: ["Charcoal Flame", "Halal", "Gluten-Free"]
+            },
+            {
+                id: 2,
+                name: "Royal Mediterranean Meze Platter",
+                category: "Starters & Meze",
+                price: "PKR 1,650",
+                rawPrice: 1650,
+                description: "Artisanal platter of creamy Chickpea Hummus, Smoked Eggplant Mutabal, Haydari dill yogurt, and olive oil with warm wood-fired pita.",
+                image: "https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=800&q=80",
+                isSignature: true,
+                tags: ["Vegetarian", "Popular Shareable"]
+            },
+            {
+                id: 3,
+                name: "Sautéed Lamb Hummus",
+                category: "Starters & Meze",
+                price: "PKR 1,350",
+                rawPrice: 1350,
+                description: "Smooth tahini chickpea dip topped with warm spiced sauteed lamb bits, toasted pine nuts, and cold-pressed extra virgin olive oil.",
+                image: "https://images.unsplash.com/photo-1637806930600-37fa8893f097?auto=format&fit=crop&w=800&q=80",
+                isSignature: false,
+                tags: ["High Protein", "Chef Specialty"]
+            },
+            {
+                id: 4,
+                name: "Pan-Seared Mediterranean Sea Bass",
+                category: "Mediterranean Mains",
+                price: "PKR 2,850",
+                rawPrice: 2850,
+                description: "Fresh sea bass fillet pan-seared with lemon caper emulsion, wilted spinach, wild garlic, and rosemary crushed potatoes.",
+                image: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80",
+                isSignature: true,
+                tags: ["Seafood", "Gluten-Free"]
+            },
+            {
+                id: 5,
+                name: "Sultan Beyti Kebab",
+                category: "Turkish Specialties",
+                price: "PKR 2,650",
+                rawPrice: 2650,
+                description: "Seasoned ground beef wrapped in thin lavash flatbread, sliced and baked, lathered with browned tomato butter & garlic yogurt sauce.",
+                image: "https://images.unsplash.com/photo-1603360946369-dc9bb6258143?auto=format&fit=crop&w=800&q=80",
+                isSignature: true,
+                tags: ["Chef's Special", "Authentic"]
+            },
+            {
+                id: 6,
+                name: "Halloumi Cheese Fries",
+                category: "Starters & Meze",
+                price: "PKR 1,250",
+                rawPrice: 1250,
+                description: "Crispy fried golden Cypriot halloumi sticks dusted with zesty za'atar spice, pomegranate glaze, and mint garlic dip.",
+                image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80",
+                isSignature: false,
+                tags: ["Vegetarian", "Hot Starter"]
+            },
+            {
+                id: 7,
+                name: "Crispy Pistachio Kunafa",
+                category: "Desserts",
+                price: "PKR 1,450",
+                rawPrice: 1450,
+                description: "Shredded kataifi dough stuffed with melted Hatay cheese, soaked in orange blossom syrup, topped with Turkish Antep pistachios & mastic ice cream.",
+                image: "https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=800&q=80",
+                isSignature: true,
+                tags: ["Baked Fresh", "Sweet Specialty"]
+            },
+            {
+                id: 8,
+                name: "Turkish Sand Coffee & Baklava",
+                category: "Beverages",
+                price: "PKR 650",
+                rawPrice: 650,
+                description: "Traditional Turkish coffee slowly brewed over copper hot sand with cardamom seeds, served alongside flaky pistachio baklava.",
+                image: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+                isSignature: false,
+                tags: ["Traditional", "Hot Beverage"]
+            },
+            {
+                id: 9,
+                name: "Traditional Turkish Breakfast Feast",
+                category: "Breakfast",
+                price: "PKR 2,450",
+                rawPrice: 2450,
+                description: "Lavish breakfast spread with Menemen scrambled eggs, aged feta, grilled halloumi, black olives, kaymak with honey, and unlimited Turkish Tea.",
+                image: "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=800&q=80",
+                isSignature: true,
+                tags: ["Weekend Brunch", "Feast for 2"]
+            }
+        ];
+
+        // State variables
+        let currentCategory = "All";
+        let searchQuery = "";
+
+        // DOM Element references
+        const menuGrid = document.getElementById('menu-grid');
+        const noResults = document.getElementById('no-menu-results');
+        const searchInput = document.getElementById('menu-search-input');
+        const clearSearchBtn = document.getElementById('clear-search-btn');
+        const dishModal = document.getElementById('dish-modal');
+
+        function renderMenu() {
+            menuGrid.innerHTML = "";
+            
+            const filtered = MENU_DATA.filter(item => {
+                const matchesCategory = currentCategory === "All" || item.category === currentCategory;
+                const matchesSearch = item.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
+                                      item.description.toLowerCase().includes(searchQuery.toLowerCase());
+                return matchesCategory && matchesSearch;
+            });
+
+            if (filtered.length === 0) {
+                noResults.classList.remove('hidden');
+            } else {
+                noResults.classList.add('hidden');
+                filtered.forEach(dish => {
+                    const card = document.createElement('div');
+                    card.className = "group bg-sauteSurface border border-white/10 hover:border-sauteGold/50 rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1 cursor-pointer flex flex-col justify-between shadow-xl";
+                    
+                    card.innerHTML = `
+                        <div>
+                            <div class="relative h-48 w-full overflow-hidden bg-black/40 zoom-img-container">
+                                <img src="${dish.image}" alt="${dish.name}" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-t from-sauteSurface via-transparent to-transparent opacity-80"></div>
+                                ${dish.isSignature ? `<span class="absolute top-3 left-3 bg-sauteGold text-black text-[9px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full shadow-md">Chef Special</span>` : ''}
+                                <span class="absolute bottom-3 right-3 bg-sauteBg/90 backdrop-blur-md text-sauteGold font-serif font-bold text-sm px-3 py-1 rounded-lg border border-sauteGold/30">
+                                    ${dish.price}
+                                </span>
+                            </div>
+                            <div class="p-5 space-y-2.5">
+                                <h3 class="font-serif text-xl font-medium text-sauteIvory group-hover:text-sauteGold transition-colors">${dish.name}</h3>
+                                <p class="text-gray-400 text-xs font-light leading-relaxed line-clamp-2">${dish.description}</p>
+                            </div>
+                        </div>
+                        <div class="px-5 pb-5 pt-2 flex items-center justify-between border-t border-white/5 text-[11px] text-gray-500">
+                            <div class="flex gap-1.5">
+                                ${dish.tags.map(t => `<span class="text-[9px] text-gray-400 bg-white/5 px-2 py-0.5 rounded">${t}</span>`).join('')}
+                            </div>
+                            <span class="text-sauteGold group-hover:underline font-medium">View Dish <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                        </div>
+                    `;
+
+                    card.addEventListener('click', () => openDishModal(dish));
+                    menuGrid.appendChild(card);
+                });
+            }
+        }
+
+        // Dish Details Modal Trigger
+        function openDishModal(dish) {
+            document.getElementById('modal-dish-img').src = dish.image;
+            document.getElementById('modal-dish-category').textContent = dish.category;
+            document.getElementById('modal-dish-price').textContent = dish.price;
+            document.getElementById('modal-dish-title').textContent = dish.name;
+            document.getElementById('modal-dish-desc').textContent = dish.description;
+            
+            const tagsContainer = document.getElementById('modal-dish-tags');
+            tagsContainer.innerHTML = dish.tags.map(t => `<span class="bg-sauteGold/10 border border-sauteGold/30 text-sauteGold text-xs px-2.5 py-1 rounded-md">${t}</span>`).join('') + '<span class="bg-white/5 text-gray-300 text-xs px-2.5 py-1 rounded-md">100% Halal</span>';
+
+            dishModal.classList.remove('hidden');
+            dishModal.classList.add('flex');
+        }
+
+        document.getElementById('close-dish-modal').addEventListener('click', () => {
+            dishModal.classList.add('hidden');
+            dishModal.classList.remove('flex');
+        });
+
+        document.getElementById('modal-reserve-btn').addEventListener('click', () => {
+            dishModal.classList.add('hidden');
+            dishModal.classList.remove('flex');
+        });
+
+        // Search Bar Handlers
+        searchInput.addEventListener('input', (e) => {
+            searchQuery = e.target.value.trim();
+            if (searchQuery.length > 0) {
+                clearSearchBtn.classList.remove('hidden');
+            } else {
+                clearSearchBtn.classList.add('hidden');
+            }
+            renderMenu();
+        });
+
+        clearSearchBtn.addEventListener('click', () => {
+            searchInput.value = "";
+            searchQuery = "";
+            clearSearchBtn.classList.add('hidden');
+            renderMenu();
+        });
+
+        document.getElementById('reset-menu-filters').addEventListener('click', () => {
+            searchInput.value = "";
+            searchQuery = "";
+            currentCategory = "All";
+            clearSearchBtn.classList.add('hidden');
+            
+            document.querySelectorAll('.menu-tab-btn').forEach(btn => {
+                btn.classList.remove('bg-sauteGold', 'text-black', 'border-sauteGold', 'font-semibold');
+                btn.classList.add('bg-sauteSurface', 'text-gray-300', 'border-white/10');
+                if (btn.dataset.category === "All") {
+                    btn.classList.add('bg-sauteGold', 'text-black', 'border-sauteGold', 'font-semibold');
+                    btn.classList.remove('bg-sauteSurface', 'text-gray-300');
+                }
+            });
+
+            renderMenu();
+        });
+
+        // Category Tab Handlers
+        document.querySelectorAll('.menu-tab-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                document.querySelectorAll('.menu-tab-btn').forEach(b => {
+                    b.classList.remove('bg-sauteGold', 'text-black', 'border-sauteGold', 'font-semibold');
+                    b.classList.add('bg-sauteSurface', 'text-gray-300', 'border-white/10');
+                });
+
+                button.classList.add('bg-sauteGold', 'text-black', 'border-sauteGold', 'font-semibold');
+                button.classList.remove('bg-sauteSurface', 'text-gray-300');
+
+                currentCategory = button.dataset.category;
+                renderMenu();
+            });
+        });
+
+        // Gallery Filter & Lightbox Handlers
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        const lightboxModal = document.getElementById('lightbox-modal');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxTitle = document.getElementById('lightbox-title');
+
+        document.querySelectorAll('.gallery-tab').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.gallery-tab').forEach(b => {
+                    b.classList.remove('bg-sauteGold', 'text-black', 'font-semibold');
+                    b.classList.add('text-gray-400');
+                });
+                btn.classList.add('bg-sauteGold', 'text-black', 'font-semibold');
+                btn.classList.remove('text-gray-400');
+
+                const filter = btn.dataset.filter;
+                galleryItems.forEach(item => {
+                    if (filter === "All" || item.dataset.category === filter) {
+                        item.classList.remove('hidden');
+                    } else {
+                        item.classList.add('hidden');
+                    }
+                });
+            });
+        });
+
+        galleryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                lightboxImg.src = item.dataset.src;
+                lightboxTitle.textContent = item.dataset.title;
+                lightboxModal.classList.remove('hidden');
+                lightboxModal.classList.add('flex');
+            });
+        });
+
+        document.getElementById('close-lightbox').addEventListener('click', () => {
+            lightboxModal.classList.add('hidden');
+            lightboxModal.classList.remove('flex');
+        });
+
+        // Mobile Navigation Drawer Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileDrawer = document.getElementById('mobile-drawer');
+        const menuIconBars = document.getElementById('menu-icon-bars');
+        const menuIconX = document.getElementById('menu-icon-x');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            const isOpened = !mobileDrawer.classList.contains('hidden');
+            if (isOpened) {
+                mobileDrawer.classList.add('hidden');
+                mobileDrawer.classList.remove('flex');
+                menuIconBars.classList.remove('hidden');
+                menuIconX.classList.add('hidden');
+            } else {
+                mobileDrawer.classList.remove('hidden');
+                mobileDrawer.classList.add('flex');
+                menuIconBars.classList.add('hidden');
+                menuIconX.classList.remove('hidden');
+            }
+        });
+
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileDrawer.classList.add('hidden');
+                mobileDrawer.classList.remove('flex');
+                menuIconBars.classList.remove('hidden');
+                menuIconX.classList.add('hidden');
+            });
+        });
+
+        // Reservation Form Submission
+        const resForm = document.getElementById('reservation-form');
+        const resModal = document.getElementById('reservation-modal');
+        const resSummary = document.getElementById('reservation-summary-text');
+
+        resForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('res-name').value;
+            const phone = document.getElementById('res-phone').value;
+            const date = document.getElementById('res-date').value;
+            const time = document.getElementById('res-time').value;
+            const guests = document.getElementById('res-guests').value;
+            const seating = document.getElementById('res-seating').value;
+
+            resSummary.innerHTML = `Thank you, <strong class="text-sauteGold">${name}</strong>! We have received your request for <strong class="text-white">${guests}</strong> on <strong class="text-white">${date} at ${time}</strong> (${seating}). Our dining host will review and contact you at <strong class="text-sauteGold">${phone}</strong> shortly.`;
+
+            resModal.classList.remove('hidden');
+            resModal.classList.add('flex');
+            resForm.reset();
+        });
+
+        document.getElementById('close-res-modal').addEventListener('click', () => {
+            resModal.classList.add('hidden');
+            resModal.classList.remove('flex');
+        });
+
+        // Initial menu render on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            renderMenu();
+        });
+    </script>
+</body>
+</html>
